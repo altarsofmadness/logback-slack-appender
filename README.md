@@ -3,9 +3,9 @@
 writes log output to Slack utilising the <a href="https://api.slack.com/incoming-webhooks">Webhooks API</a>
 
 required parameters are:
-threshold level
-pattern
-endpoint
+<br/>level - threshold level for outout
+<br/>pattern - logback pattern layout
+<br/>endpoint - slack generated webhooks endpoint
 
 Example configuration:
 
@@ -13,6 +13,6 @@ Example configuration:
     <endpoint>"https://hooks.slack.com/services/<webhooks-token>"</endpoint>
     <level>ERROR</level>
       <layout class="ch.qos.logback.classic.PatternLayout">
-          <pattern>${runningNode} %date %-5level - %logger{0} - %message%n</pattern>
+          <pattern>%date %-5level - %logger{0} - %message%n</pattern>
       </layout>
     </appender>        
