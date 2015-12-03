@@ -1,13 +1,10 @@
-Logback Slack Appender
+<h1>Logback Slack Appender</h1>
 
-writes log output to Slack utilising the Webhooks API
+writes log output to Slack utilising the <a href="https://api.slack.com/incoming-webhooks">Webhooks API
 
 required parameters are:
-
 threshold level
-
 pattern
-
 endpoint
 
 Example configuration:
